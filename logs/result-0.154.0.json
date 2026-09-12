@@ -1,0 +1,20 @@
+[
+  {
+    "case": "failed_then_eof",
+    "returncode": 1,
+    "duration_ms": 406,
+    "original_error_preserved": true,
+    "idle_timeout_reported": false,
+    "stdout": "{\"type\":\"thread.started\",\"thread_id\":\"01a0938c-ba90-7801-91cf-e60e029a576b\"}\n{\"type\":\"turn.started\"}\n{\"type\":\"error\",\"message\":\"stream disconnected before completion: XBSTACK_LOCAL_TERMINAL_FAILURE\"}\n{\"type\":\"turn.failed\",\"error\":{\"message\":\"stream disconnected before completion: XBSTACK_LOCAL_TERMINAL_FAILURE\"}}\n",
+    "stderr": "Reading additional input from stdin...\n2026-09-12T02:57:48.834475Z ERROR codex_core::session::session: failed to load skill /Users/beijingchaoyang/.agents/skills/debug-pro-1.0.0/SKILL.md: missing YAML frontmatter delimited by ---\n2026-09-12T02:57:48.834563Z ERROR codex_core::session::session: failed to load skill /Users/beijingchaoyang/.agents/skills/feishu-drive-1.0.0/SKILL.md: invalid YAML: could not find expected ':' at line 13 column 1, while scanning a simple key at line 12 column 1\n2026-09-12T02:57:48.834565Z ERROR codex_core::session::session: failed to load skill /Users/beijingchaoyang/.agents/skills/test-runner-1.0.0/SKILL.md: missing YAML frontmatter delimited by ---\n"
+  },
+  {
+    "case": "failed_then_open_socket",
+    "returncode": 1,
+    "duration_ms": 1124,
+    "original_error_preserved": false,
+    "idle_timeout_reported": true,
+    "stdout": "{\"type\":\"thread.started\",\"thread_id\":\"01a0938c-bc1e-77e3-9224-0da5fd761e02\"}\n{\"type\":\"turn.started\"}\n{\"type\":\"error\",\"message\":\"stream disconnected before completion: idle timeout waiting for SSE\"}\n{\"type\":\"turn.failed\",\"error\":{\"message\":\"stream disconnected before completion: idle timeout waiting for SSE\"}}\n",
+    "stderr": "Reading additional input from stdin...\n2026-09-12T02:57:49.167685Z ERROR codex_core::session::session: failed to load skill /Users/beijingchaoyang/.agents/skills/debug-pro-1.0.0/SKILL.md: missing YAML frontmatter delimited by ---\n2026-09-12T02:57:49.167704Z ERROR codex_core::session::session: failed to load skill /Users/beijingchaoyang/.agents/skills/feishu-drive-1.0.0/SKILL.md: invalid YAML: could not find expected ':' at line 13 column 1, while scanning a simple key at line 12 column 1\n2026-09-12T02:57:49.167706Z ERROR codex_core::session::session: failed to load skill /Users/beijingchaoyang/.agents/skills/test-runner-1.0.0/SKILL.md: missing YAML frontmatter delimited by ---\n"
+  }
+]
