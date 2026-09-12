@@ -75,14 +75,22 @@ def run_case(codex_path: str, hold_open: bool, idle_ms: int):
             )
             duration_ms = round((time.monotonic() - started) * 1000)
             combined = (proc.stdout or "") + "\n" + (proc.stderr or "")
+            user_visible_error = ""
+            for line in (proc.stdout or "").splitlines():
+                try:
+                    event = json.loads(line)
+                except json.JSONDecodeError:
+                    continue
+                if event.get("type") == "error":
+                    user_visible_error = str(event.get("message") or "")
+                    break
             return {
                 "case": "failed_then_open_socket" if hold_open else "failed_then_eof",
                 "returncode": proc.returncode,
                 "duration_ms": duration_ms,
                 "original_error_preserved": FAILURE_MARKER in combined,
                 "idle_timeout_reported": "idle timeout waiting for SSE" in combined,
-                "stdout": proc.stdout,
-                "stderr": proc.stderr,
+                "user_visible_error": user_visible_error,
             }
 
 

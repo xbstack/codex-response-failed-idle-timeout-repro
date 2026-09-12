@@ -4,8 +4,8 @@ Test date: 2026-09-12
 
 | Version | Source | `response.failed` + EOF | `response.failed` + open socket | Result |
 |---|---|---|---|---|
-| 0.153.4 | `/Applications/ChatGPT.app/Contents/Resources/codex` | original marker preserved | marker replaced by `idle timeout waiting for SSE` | affected |
-| 0.154.0 | `@openai/codex@0.154.0` | original marker preserved | marker replaced by `idle timeout waiting for SSE` | affected |
+| 0.153.4 | ChatGPT.app bundled Codex CLI | original marker preserved | marker replaced by `idle timeout waiting for SSE` | affected |
+| 0.154.0 | official GitHub stable release `rust-v0.154.0` (Apple Silicon) | original marker preserved | marker replaced by `idle timeout waiting for SSE` | affected |
 
 Fixture settings:
 

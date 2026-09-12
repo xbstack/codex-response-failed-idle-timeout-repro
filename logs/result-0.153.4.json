@@ -2,7 +2,7 @@
   {
     "case": "failed_then_eof",
     "returncode": 1,
-    "duration_ms": 475,
+    "duration_ms": 257,
     "original_error_preserved": true,
     "idle_timeout_reported": false,
     "user_visible_error": "stream disconnected before completion: XBSTACK_LOCAL_TERMINAL_FAILURE"
@@ -10,7 +10,7 @@
   {
     "case": "failed_then_open_socket",
     "returncode": 1,
-    "duration_ms": 1091,
+    "duration_ms": 1090,
     "original_error_preserved": false,
     "idle_timeout_reported": true,
     "user_visible_error": "stream disconnected before completion: idle timeout waiting for SSE"
