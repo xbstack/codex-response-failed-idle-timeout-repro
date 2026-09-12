@@ -62,6 +62,7 @@ This repository confirms a client-side failure-handling shape. It does **not** c
 - OpenAI Codex issue: https://github.com/openai/codex/issues/43140
 - OpenAI Codex releases: https://github.com/openai/codex/releases
 
-## XBSTACK article
+## XBSTACK articles
 
-The accompanying bilingual troubleshooting article documents the independent version matrix, diagnosis boundary, and temporary handling guidance.
+- English: https://www.xbstack.com/en/ai/codex-response-failed-idle-timeout-sse/?utm_source=github&utm_medium=referral&utm_campaign=codex_response_failed_idle_timeout&utm_content=repository_readme&ref=github
+- 中文: https://www.xbstack.com/ai/codex-response-failed-idle-timeout-sse/?utm_source=github&utm_medium=referral&utm_campaign=codex_response_failed_idle_timeout&utm_content=repository_readme_zh&ref=github
