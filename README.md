@@ -16,6 +16,8 @@ Tested on macOS with a local loopback HTTP server. No model, OpenAI/Azure API, c
 | 0.153.4 | keep socket open | no | yes |
 | 0.154.0 | close after `response.failed` | yes | no |
 | 0.154.0 | keep socket open | no | yes |
+| 0.155.0-alpha.9.2 | close after `response.failed` | yes | no |
+| 0.155.0-alpha.9.2 | keep socket open | no | yes |
 
 The fixture uses an 800 ms stream idle timeout so the failure can be observed quickly.
 

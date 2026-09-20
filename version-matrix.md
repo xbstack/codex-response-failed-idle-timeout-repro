@@ -1,11 +1,12 @@
 # Version matrix
 
-Test date: 2026-09-12
+Test dates: 2026-09-12, 2026-09-20
 
 | Version | Source | `response.failed` + EOF | `response.failed` + open socket | Result |
 |---|---|---|---|---|
 | 0.153.4 | ChatGPT.app bundled Codex CLI | original marker preserved | marker replaced by `idle timeout waiting for SSE` | affected |
 | 0.154.0 | official GitHub stable release `rust-v0.154.0` (Apple Silicon) | original marker preserved | marker replaced by `idle timeout waiting for SSE` | affected |
+| 0.155.0-alpha.9.2 | ChatGPT.app bundled Codex CLI | original marker preserved | marker replaced by `idle timeout waiting for SSE` | affected |
 
 Fixture settings:
 
@@ -17,4 +18,4 @@ Fixture settings:
 - isolated temporary `CODEX_HOME`
 - no model/API credential/external network dependency
 
-Upstream issue #43140 is still open as checked on 2026-09-12. The upstream issue contains a proposed source patch, but XBSTACK does not treat that patch as an official released fix until it is merged/released and independently verified in a published version.
+Upstream issue #43140 is still open as checked on 2026-09-20. The upstream issue contains a proposed source patch, but XBSTACK does not treat that patch as an official released fix until it is merged/released and independently verified in a published version.
